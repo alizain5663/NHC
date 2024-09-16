@@ -13,17 +13,18 @@
     <div id="myLinks" class="overlay"></div>
     <div class="sidebar">
       <div class="top-sidebar">
+        <a id="sidebar-title">MENU</a>
         <a href="javascript:void(0);" class="closebtn">×</a>
-        <a id="sidebar-title">قائمة طعام</a>
-    </div>
-    <hr>
-    <div id="menu-content">
-        <a id="menu-toggle">جميع المجتمعات</a>
-    </div>
-    <div id="all-communities" style="display: none;">
-        <a href="#al-fursan">الخزام</a>
-        <a href="#al-khuzam">الفرسان</a>
-    </div>
+        <a href="javascript:void(0);" class="backbtn" style="display: none;"> > </a> <!-- Back button -->
+      </div>
+      <hr>
+      <div id="menu-content" class="flex justify-between">
+        <a id="menu-toggle">All Communities</a>
+      </div>
+      <div id="all-communities" style="display: none;">
+        <a href="Al-Fursan">Al-Fursan</a>
+        <a href="#al-khuzam">Al-Khuzam</a>
+      </div>
     </div>
     <section class="hero-section w-full h-screen bg-cover bg-center bg-no-repeat bg-scroll overflow-hidden content" style="background-image: url('./public/assets/hero-bg.png');">
       <header class="w-full block">
@@ -107,7 +108,6 @@
     import { myFunction } from './main.js';
     document.querySelector('.navbar-button img').onclick = myFunction;
     document.querySelector('.closebtn').onclick = myFunction;
-    // Similarly for other elements
   </script>
 </body>
 </html>

@@ -85,6 +85,7 @@ nav {
     transition: 0.3s; /* Smooth slide-in effect */
     transform: translate(10%,-50%); /* Center the sidebar vertically */
     z-index: 3; /* Ensure this is above the overlay */
+  display: none;
     border-radius: 10px; /* Optional: Add rounded corners for better aesthetics */
 }
 
@@ -114,11 +115,11 @@ nav {
 }
 
 .blur {
-    filter: blur(1.5px);
+    filter: blur(2px);
 }
 
 hr {
-    width: 90%;
+    width: 100%;
     height: 1px;
     margin-top: 28px;
     background: white;
